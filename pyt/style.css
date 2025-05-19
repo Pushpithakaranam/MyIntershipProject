@@ -1,0 +1,81 @@
+:root{
+    --bg-color:#875f8b;
+    --btn-color: #EA1179;
+    --box-shadow:0PX 0PX 5PX var(--btn-color);
+    --color:#fff;
+}
+
+body{
+    margin:0;
+    background-color: var(--bg-color);  
+    font-family: 'ubuntu',sans-serif;
+}
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+   /* border-bottom:1px solid var(--btn-color);*/
+   box-shadow: 0px 15px 10px -15px var(--btn-color);
+}
+.header_menu{
+    box-shadow: 0px 15px -15px var(--btn-color);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul a{
+    color: var(--color);
+    text-decoration: none;
+    transition: background-color.8s;
+}
+nav ul a:hover{
+    color:var(--btn-color);
+    background-color: red;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+.container .left{
+    color: var(--color);
+    width: 50%;
+}
+.container .left h1{
+    margin: 0;
+    font-size: 30px;
+    letter-spacing:  1px;
+    line-height: 40px;
+}
+.container .left label{
+    text-shadow: 2px 2px black;
+}
+.container .right{
+    height: 80%;
+    width: 50%;   
+}
+.right img{
+    height: 80%;
+}
+.container .left .sub_title{
+    color: var(--btn-color);
+}
+button{
+    background-color: var(--btn-color);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px ;
+    font-weight: 600px ;
+    color: var(--color);
+}
+button:hover{
+    color: var(--bg-color);
+}
